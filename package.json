@@ -33,6 +33,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "marked": "^0.3.5",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   }
