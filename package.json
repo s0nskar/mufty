@@ -1,0 +1,29 @@
+{
+  "name": "mufty",
+  "version": "1.0.0",
+  "description": "Markdown Previewer built with Electron and React",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanskar-modi/mufty.git"
+  },
+  "keywords": [
+    "mufty",
+    "react",
+    "markdown",
+    "electron"
+  ],
+  "author": "Sanskar Modi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanskar-modi/mufty/issues"
+  },
+  "homepage": "https://github.com/sanskar-modi/mufty#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.5"
+  }
+}
