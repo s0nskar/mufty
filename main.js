@@ -2,6 +2,7 @@ const	electron	=	require('electron');
 
 const	{app}	=	electron;
 const	{BrowserWindow}	=	electron;
+const {ipcMain} = electron;
 
 let	win;
 
@@ -26,4 +27,8 @@ app.on('activate',	()	=>	{
 		if (win	===	null)	{
 			createWindow();
 		}
+});
+
+ipcMain.on('close', (event, arg) => {
+		app.quit();
 });

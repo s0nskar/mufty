@@ -31,7 +31,10 @@ export default class Previewer extends React.Component {
       <div className="previewer">
         <textarea
           className="editor"
-          onChange={this.handleTextChange} />
+          onChange={this.handleTextChange}
+          rows="15"
+          cols="40"
+          autoFocus/>
         <div
           className="preview"
           dangerouslySetInnerHTML={this.markup()} />

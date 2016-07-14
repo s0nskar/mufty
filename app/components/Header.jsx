@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+const ipcRenderer = window.require('electron').ipcRenderer;
+
 export default class Header extends React.Component {
   constructor() {
     super();
@@ -8,7 +10,7 @@ export default class Header extends React.Component {
   }
 
   close() {
-
+    ipcRenderer.send('close');
   }
 
   render() {
