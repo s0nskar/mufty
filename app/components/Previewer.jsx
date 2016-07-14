@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import marked from 'marked'
 import hljs from 'highlight.js'
 
+require('../stylesheets/components/Previewer.less')
+
 // Marked Configration
 marked.setOptions({
   highlight: function(code) {
