@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import FontAwesome from 'react-fontawesome'
 
 const ipcRenderer = window.require('electron').ipcRenderer;
 
@@ -18,9 +19,18 @@ export default class Header extends React.Component {
       <header>
         <h1>Mufty</h1>
         <div className="btns-header">
-          <button onClick={this.close}>Close</button>
-          <button onClick={this.close}>Close</button>
-          <button onClick={this.close}>Close</button>
+          <FontAwesome
+            name='close'
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+            onClick={this.close} />
+          <FontAwesome
+            name='close'
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+            onClick={this.close} />
+          <FontAwesome
+            name='close'
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+            onClick={this.close} />
         </div>
       </header>
     )

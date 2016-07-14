@@ -7,7 +7,11 @@ const {ipcMain} = electron;
 let	win;
 
 function createWindow() {
-		win	=	new	BrowserWindow({width:	800,	height:	600});
+		win	=	new	BrowserWindow({
+			width:	800,
+			height:	600,
+			frame: false,
+		});
 		win.loadURL(`file://${__dirname}/app/index.html`);
 		win.webContents.openDevTools();
 		win.on('closed',	()	=>	{
