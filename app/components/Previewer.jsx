@@ -1,6 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import marked from 'marked'
+import hljs from 'highlight.js'
+
+// Marked Configration
+marked.setOptions({
+  highlight: function(code) {
+    return hljs.highlightAuto(code).value;
+  }
+})
 
 export default class Previewer extends React.Component {
   constructor() {
